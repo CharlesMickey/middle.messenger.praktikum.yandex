@@ -2,7 +2,6 @@
   "name": "messenger",
   "version": "1.0.0",
   "description": "MF from Ya.Practicum",
-  "main": "index.html",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html"
