@@ -533,7 +533,7 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"8lqZg":[function(require,module,exports) {
 const root = document.querySelector("#root");
-root.textContent = "Messenger";
+root.textContent = "ART Messenger.test";
 
 },{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire938d")
 
