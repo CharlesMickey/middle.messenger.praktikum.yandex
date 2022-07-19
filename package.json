@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "MF from Ya.Practicum",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel static/index.html",
+    "build": "parcel build static/index.html"
   },
   "keywords": [],
   "author": "Артур Чухненко",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.6.2"
+    "parcel": "^2.6.2",
+    "parcel-transformer-hbs": "^1.0.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
+    "handlebars": "^4.7.7",
+    "postcss-preset-env": "^7.7.2"
   }
 }
