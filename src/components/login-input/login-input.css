@@ -1,0 +1,27 @@
+.loginInput {
+  border: none;
+  border-bottom: 1px solid var(--gray-high);
+  background-color: inherit;
+  height: 37px;
+  outline: none;
+  color: var(--white);
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: inset 20px 20px 0px 20px var(--black);
+}
+
+.loginInput:-webkit-autofill {
+  -webkit-text-fill-color: var(--white) !important;
+  color: var(--white) !important;
+}
+
+.linkText::placeholder {
+  transition: all 0.3s linear;
+}
+.loginInput:focus::placeholder {
+  transition: all 0.3s linear;
+  transform: translateY(-10px);
+  font-size: 9px;
+  line-height: 9px;
+  color: var(--gray-high);
+}
