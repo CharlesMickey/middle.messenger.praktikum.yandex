@@ -1,0 +1,27 @@
+.profileInput {
+  width: 100%;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  text-align: end;
+  background-color: inherit;
+  color: var(--profile-input);
+  box-shadow: inset 20px 20px 0px 20px var(--profile-background);
+}
+
+.profileLabel {
+  display: flex;
+  justify-content: space-between;
+  min-width: 410px;
+  font-size: 11px;
+  border-bottom: 1px solid var(--border-profile);
+  padding-bottom: 10px;
+  margin: 10px 0 0;
+  color: var(--gray-hid);
+}
+
+.profileLabel:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}

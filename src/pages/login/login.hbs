@@ -1,0 +1,17 @@
+<section class="loginPage">
+  {{{messengerName}}}
+ <article class="loginArticle">
+  <form class="loginForm">
+    <h1 class="loginTitle">{{loginTitle}}</h1>
+    <fieldset class="loginFieldset">
+      {{#each inputs}}
+      {{>loginInput   }}
+      {{/each }}
+    </fieldset>
+    <div class="buttonLoginContainer">
+      {{{button}}}
+      {{{linkText}}}
+    </div>
+  </form>
+  </article>
+</section>

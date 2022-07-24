@@ -1,0 +1,124 @@
+.profilePage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: var(--profile-background);
+}
+
+.goBackContainer {
+  text-align: center;
+  padding: 0 18px;
+  background-color: var(--profile-go-back);
+  border-right: 1px solid var(--avatar-background);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.profileButtonGoBack {
+  background: url("../../../static/images/svg/button-arrow.svg") no-repeat
+    center/contain;
+  border: none;
+  filter: drop-shadow(1px 1px 0.5px var(--light-shadow));
+  height: 28px;
+  min-width: 28px;
+  padding: 2px;
+  transition: all 0.5s linear;
+}
+
+.profileButtonGoBack:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s linear;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--profile-background);
+}
+
+.profileAvatarContainer {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: var(--avatar-background);
+  margin: 60px 0 100px;
+}
+
+.profileAvatarEdit {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  object-fit: none;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.profileAvatarEdit:hover {
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+
+.fileInput {
+  position: relative;
+  opacity: 0;
+  z-index: 5;
+  width: 130px;
+  height: 130px;
+}
+
+.profileForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profileSet {
+  margin: 0 0 10px;
+  padding: 0px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileButton {
+  margin: 196px 0 16px;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.profileButton:disabled {
+  cursor: default;
+  color: rgb(177, 174, 174);
+}
+
+.profileButtonOut {
+  color: var(--light-purple);
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

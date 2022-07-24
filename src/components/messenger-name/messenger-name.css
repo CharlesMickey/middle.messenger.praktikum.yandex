@@ -1,0 +1,26 @@
+.containerMessengerName {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleContainer {
+  min-width: 296px;
+}
+
+.art {
+  text-align: left;
+  font-size: 108px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.messenger {
+  text-align: right;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 20px 0 0;
+}

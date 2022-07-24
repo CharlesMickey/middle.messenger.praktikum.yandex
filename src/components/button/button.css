@@ -1,0 +1,33 @@
+.button {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 9px 5px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  border-radius: 8px;
+  color: var(--white);
+  transition: all 0.8s linear;
+}
+
+.button {
+  background-color: var(--gray);
+}
+
+.button:hover {
+  background-color: var(--gray-high);
+}
+
+.button:active {
+  transform: scale(0.97);
+  cursor: wait;
+}
+
+.button:disabled {
+  background-color: var(--bright-gray);
+  transform: scale(1);
+  cursor: inherit;
+}

@@ -1,0 +1,15 @@
+.linkText {
+  text-decoration: none;
+  font-size: 11px;
+  transition: all 0.8s linear;
+  color: var(--white);
+}
+
+.linkText:hover {
+  transform: scale(1.02);
+}
+
+.linkText:active {
+  transform: scale(0.97);
+  cursor: wait;
+}

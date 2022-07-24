@@ -1,7 +1,9 @@
 # Проект: Мессенджер на JS.
 
-## Ссылка на макет в Figma:
-[ART messenger](https://www.figma.com/file/5KsDpNRNkK66MMlEdEy2Fv/Untitled?node-id=0%3A1) 
+## Ссылки:
+[Макет в Figma](https://sprightly-capybara-7c09e8.netlify.app/)
+
+[Netlify](https://sprightly-capybara-7c09e8.netlify.app/)
 
 
 ## Языки/инструменты
@@ -33,7 +35,7 @@ $ npm run build
 ```
 
 ### Автор:
-*Чухненко Артур 
+*Чухненко Артур
 (CharlesMickey.ru@yandex.com)*
 
 ![image](https://user-images.githubusercontent.com/50279935/179562735-e885be01-485d-4c60-a6d7-cee171ec6301.png)

@@ -1,0 +1,49 @@
+<section class="profilePage">
+  <div class="goBackContainer">
+     <button
+        class="profileButtonGoBack"
+        type="button"
+        title="Назад"
+      />
+  </div>
+  <div class="profileContainer">
+    <div class="profileAvatarContainer">
+      {{{avatar}}}
+        <label for="file-input">
+          <img
+          class="profileAvatarEdit"
+          src="{{editAvatar}}"
+          alt="Значек редактирования"
+          title="Сменить аватар"
+         />
+        </label>
+         <input
+            hidden
+            id="file-input"
+            class="fileInput"
+            type="file"
+          />
+    </div>
+    <form class="profileForm">
+      <fieldset class="profileSet">
+      {{#each inputsProfile}}
+        {{>profileInput   }}
+        {{/each }}
+      </fieldset>
+      <button
+        type="submit"
+        value="Отправить на сервер"
+        class="profileButton"
+      >
+        Редактировать
+      </button>
+      <button
+        class="profileButtonOut"
+        value="Выйти из аккаунта"
+        type="button"
+      >
+        Выйти из аккаунта
+      </button>
+    </form>
+  </div>
+</section>
