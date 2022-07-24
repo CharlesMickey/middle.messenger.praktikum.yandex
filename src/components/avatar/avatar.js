@@ -5,6 +5,6 @@ import "./avatar.css";
 
 Handlebars.registerPartial("avatar", avatar);
 
-export const avatar = ( imgAvatar = img ) => {
+export const avatarImg = ( imgAvatar = img ) => {
   return avatar( {imgAvatar} );
 };

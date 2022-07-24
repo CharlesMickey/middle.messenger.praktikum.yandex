@@ -6,6 +6,6 @@ import "./profile.css";
 
 Handlebars.registerPartial("profilePage", profilePage);
 
-export const profilePage = ({ avatar, editAvatar = img, inputsProfile }) => {
+export const profile = ({ avatar, editAvatar = img, inputsProfile }) => {
   return profilePage({ avatar, editAvatar, inputsProfile });
 };

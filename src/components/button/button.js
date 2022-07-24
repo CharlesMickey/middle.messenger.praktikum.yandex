@@ -4,6 +4,6 @@ import "./button.css";
 
 Handlebars.registerPartial("button", button);
 
-export const button = ({buttonType, name}) => {
+export const buttonMain = ({buttonType, name}) => {
   return button({ buttonType, name });
 };

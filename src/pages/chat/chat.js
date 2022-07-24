@@ -4,6 +4,6 @@ import "./chat.css";
 
 Handlebars.registerPartial("chat", chat);
 
-export const chat = () => {
+export const chatMain = () => {
   return chat();
 };

@@ -5,6 +5,6 @@ import "./login.css";
 
 Handlebars.registerPartial("loginPage", loginPage);
 
-export const loginPage = ({ messengerName, loginTitle, inputs, button, linkText }) => {
+export const login = ({ messengerName, loginTitle, inputs, button, linkText }) => {
   return loginPage({ messengerName, loginTitle, inputs, button, linkText });
 };
