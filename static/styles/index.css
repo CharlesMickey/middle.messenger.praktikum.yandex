@@ -1,0 +1,31 @@
+@import url("./buttons.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;900&display=swap");
+
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --gray: rgba(91, 91, 91, 1);
+  --gray-hid: rgba(81, 81, 81, 1);
+  --gray-high: rgba(153, 153, 153, 1);
+  --profile-background: rgba(229, 217, 217, 1);
+  --profile-go-back: rgba(226, 211, 211, 1);
+  --profile-input:  rgba(153, 153, 153, 1);
+  --avatar-background: rgba(239, 239, 239, 1);
+  --border-profile: rgba(53, 53, 53, 1);
+  --bright-red: rgb(228, 10, 12);
+  --bright-gray: rgb(200, 200, 200);
+  --light-purple: rgba(141, 109, 182, 1);
+}
+
+html {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Inter", "Arial", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
