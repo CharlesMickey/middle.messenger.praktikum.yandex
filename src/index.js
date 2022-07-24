@@ -1,13 +1,13 @@
-import errorPage from "./pages/error/error-page";
-import linkText from "./components/link-text/link-text";
+import { errorPage } from "./pages/error/error-page";
+import { linkText } from "./components/link-text/link-text";
 import { CONSTANTS, DATA_FOR_PAGE, ROUTES } from "../utils/constants";
-import login from "./pages/login/login";
-import button from "./components/button/button";
-import messengerName from "./components/messenger-name/messenger-name";
+import { loginPage } from "./pages/login/login";
+import { button } from "./components/button/button";
+import { messengerName } from "./components/messenger-name/messenger-name";
 import layout from "./layout/layout";
-import profile from "./pages/profile/profile";
-import avatar from "./components/avatar/avatar";
-import chat from "./pages/chat/chat";
+import { profilePage } from "./pages/profile/profile";
+import { avatar } from "./components/avatar/avatar";
+import { chat } from "./pages/chat/chat";
 
 const location = window.location.pathname;
 
@@ -18,13 +18,13 @@ switch (location) {
     res = chat();
     break;
   case ROUTES.PROFILE:
-    res = profile({
+    res = profilePage({
       avatar: avatar(),
       inputsProfile: DATA_FOR_PAGE.INPUTS_PROFILE,
     });
     break;
   case ROUTES.LOGIN:
-    res = login({
+    res = loginPage({
       messengerName: messengerName(),
       loginTitle: "Вход",
       inputs: DATA_FOR_PAGE.INPUTS_LOGIN,

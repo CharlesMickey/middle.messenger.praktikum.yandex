@@ -4,6 +4,6 @@ import "./link-text.css";
 
 Handlebars.registerPartial("linkText", linkText);
 
-export default ({ hrefLink, nameLink }) => {
+export const linkText = ({ hrefLink, nameLink }) => {
   return linkText({ hrefLink, nameLink });
 };

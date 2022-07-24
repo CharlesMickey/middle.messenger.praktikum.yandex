@@ -11,7 +11,7 @@
 
 ## Ссылки:
 
-[Макет в Figma](https://sprightly-capybara-7c09e8.netlify.app/)
+[Макет в Figma](https://www.figma.com/file/5KsDpNRNkK66MMlEdEy2Fv/Untitled?node-id=0%3A1)
 
 [Netlify](https://sprightly-capybara-7c09e8.netlify.app/)
 
