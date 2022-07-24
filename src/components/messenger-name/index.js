@@ -1,1 +1,1 @@
-export * from './lable-messanger'
+export * from './messenger-name'

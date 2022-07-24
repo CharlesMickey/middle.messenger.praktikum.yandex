@@ -4,6 +4,6 @@ import "./messenger-name.css";
 
 Handlebars.registerPartial("messengerName", messengerName);
 
-export default () => {
+export const messengerTitle = () => {
   return messengerName();
 };

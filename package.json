@@ -5,23 +5,23 @@
   "description": "MF from Ya.Practicum",
   "scripts": {
     "start": "node ./express/server.js",
-    "dev": "parcel --no-cache static/index.html",
+    "dev": "parcel --no-cache --port 3000 static/index.html",
     "build": "parcel build static/index.html"
   },
   "keywords": [],
   "author": "Артур Чухненко",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-inline-string": "^2.6.2",
-    "express": "^4.18.1",
-    "parcel": "^2.6.2",
-    "postcss-nested": "^5.0.6"
+    "@parcel/transformer-inline-string": "2.6.2",
+    "express": "4.18.1",
+    "parcel": "2.6.2",
+    "postcss-nested": "5.0.6"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.7",
-    "cssnano": "^5.1.12",
-    "handlebars": "^4.7.7",
-    "parcel-transformer-hbs": "^1.0.4",
-    "postcss-preset-env": "^7.7.2"
+    "autoprefixer": "10.4.7",
+    "cssnano": "5.1.12",
+    "handlebars": "4.7.7",
+    "parcel-transformer-hbs": "1.0.4",
+    "postcss-preset-env": "7.7.2"
   }
 }

@@ -1,13 +1,13 @@
-import errorPage from "./pages/error/error-page";
-import linkText from "./components/link-text/link-text";
+import { error } from "./pages/error";
+import { link } from "./components/link-text";
 import { CONSTANTS, DATA_FOR_PAGE, ROUTES } from "../utils/constants";
-import login from "./pages/login/login";
-import button from "./components/button/button";
-import messengerName from "./components/messenger-name/messenger-name";
+import { login } from "./pages/login";
+import { buttonMain } from "./components/button";
+import { messengerTitle } from "./components/messenger-name";
 import layout from "./layout/layout";
-import profile from "./pages/profile/profile";
-import avatar from "./components/avatar/avatar";
-import chat from "./pages/chat/chat";
+import { profile } from "./pages/profile";
+import { avatarImg } from "./components/avatar";
+import { chatMain } from "./pages/chat";
 
 const location = window.location.pathname;
 
@@ -15,21 +15,21 @@ let res;
 
 switch (location) {
   case ROUTES.MAIN:
-    res = chat();
+    res = chatMain();
     break;
   case ROUTES.PROFILE:
     res = profile({
-      avatar: avatar(),
+      avatar: avatarImg(),
       inputsProfile: DATA_FOR_PAGE.INPUTS_PROFILE,
     });
     break;
   case ROUTES.LOGIN:
     res = login({
-      messengerName: messengerName(),
+      messengerName: messengerTitle(),
       loginTitle: "Вход",
       inputs: DATA_FOR_PAGE.INPUTS_LOGIN,
-      button: button({ buttonType: "submit", name: "Вход" }),
-      linkText: linkText({
+      button: buttonMain({ buttonType: "submit", name: "Вход" }),
+      linkText: link({
         hrefLink: ROUTES.REGISTRATION,
         nameLink: CONSTANTS.NO_REGISTERED,
       }),
@@ -37,21 +37,21 @@ switch (location) {
     break;
   case ROUTES.REGISTRATION:
     res = login({
-      messengerName: messengerName(),
+      messengerName: messengerTitle(),
       loginTitle: "Регистрация",
       inputs: DATA_FOR_PAGE.INPUTS_REGISTRATION,
-      button: button({ buttonType: "submit", name: "Зарегистрироваться" }),
-      linkText: linkText({
+      button: buttonMain({ buttonType: "submit", name: "Зарегистрироваться" }),
+      linkText: link({
         hrefLink: ROUTES.LOGIN,
         nameLink: CONSTANTS.LOG_IN,
       }),
     });
     break;
   case ROUTES[500]:
-    res = errorPage({
+    res = error({
       errorCode: "500",
       errorSubtitle: CONSTANTS.TITLE_500,
-      linkText: linkText({
+      linkText: link({
         hrefLink: "/",
         nameLink: CONSTANTS.TITLE_TEXT_LINK,
       }),
@@ -59,10 +59,10 @@ switch (location) {
     break;
 
   default:
-    res = errorPage({
+    res = error({
       errorCode: "404",
       errorSubtitle: CONSTANTS.TITLE_404,
-      linkText: linkText({
+      linkText: link({
         hrefLink: "/",
         nameLink: CONSTANTS.TITLE_TEXT_LINK,
       }),
